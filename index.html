@@ -521,11 +521,12 @@ body {
 }
 
 .summary-topics {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
   width: 100%;
-  max-width: 700px;
+  max-width: 1400px;
+  align-items: start;
 }
 
 .summary-topic-card {
@@ -1218,6 +1219,7 @@ body {
   .answers-container { flex-direction: column; }
   .side-panel { width: 100%; }
   .categories-container { grid-template-columns: 1fr; }
+  .summary-topics { grid-template-columns: 1fr; }
 }
 </style>
 </head>
